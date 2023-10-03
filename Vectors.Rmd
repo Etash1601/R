@@ -1,0 +1,60 @@
+---
+title: "Vectors"
+author: "Etash"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+```{r}
+v1 = c(3,8,4,5,0,11)
+v2 = c(4,11,0,8,1,2)
+```
+```{r}
+add.result = v1+v2
+add.result
+sub.result = v1-v2
+sub.result
+```
+```{r}
+v = c(3,8,4,5,0,11,-9,304)
+a = sort(v)
+a
+revsort.b = sort(v, decreasing=TRUE)
+revsort.b
+```
+```{r}
+v = c(3,8,4,5,0,11,-9,304)
+m = rep(v, each=2)
+print(m)
+print(min(v))
+print(max(v))
+```
+```{r}
+print(mean(v))
+print(sd(v))
+```
+
+
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
