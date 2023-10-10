@@ -40,3 +40,13 @@ data$mark[1]
 #
 data$mark[5] = data$mark[5] + 5
 data
+
+
+#Q2
+data = list(ID = 1234,
+            Ename = "Etash",
+            BP = 140000)
+print(data)
+HRA = 0.16*data$BP
+data$GP = HRA + data$BP
+data
